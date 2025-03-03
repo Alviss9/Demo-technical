@@ -158,6 +158,7 @@ I click to trade
 Testcase1 Compare to notifications and position table details
     [Tags]    1.1.1
     Given I Login with Demo Account
+    Sleep    3s
         Wait Until Element Is Visible    ${Order_Type_BTN}
     When I click on ${noti_btn}
     #Pause Execution
@@ -201,4 +202,5 @@ Testcase1 Compare to notifications and position table details
     Should Be Equal    ${unit}    ${textunit}
     
     Should Be Equal    ${price}    ${textEprice}
+
     
